@@ -17,7 +17,8 @@ local M = setmetatable({}, {
 ---@alias AvanteRootSpec string|string[]|AvanteRootFn
 
 ---@type AvanteRootSpec[]
-M.spec = { "lsp", { ".git", "lua" }, "cwd" }
+---M.spec = { "lsp", { ".git", "lua" }, "cwd" }
+M.spec = { "cwd", "lsp", { ".git", "lua" } }
 
 M.detectors = {}
 
